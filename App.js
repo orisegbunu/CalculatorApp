@@ -1,9 +1,18 @@
-import { Text, View } from 'react-native';
+import React from 'react';
+import { SafeAreaView, StyleSheet } from 'react-native';
+import Calculator from './components/Calculator'; // Make sure this path matches your Calculator component
 
 export default function App() {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Hello Expo! 🚀</Text>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <Calculator />
+    </SafeAreaView>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff', // You can change the background color if you want
+  },
+});
