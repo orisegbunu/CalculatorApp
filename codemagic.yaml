@@ -2,8 +2,8 @@ workflows:
   react-native-workflow:
     name: React Native Build
     environment:
-      node: 8.19.4
-      npm: latest
+      node: 18.18.0
+      npm: 9.8.1
       groups:
         - default
     scripts:
